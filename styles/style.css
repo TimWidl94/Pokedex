@@ -1,0 +1,443 @@
+body {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.753);
+}
+
+.bodyContainer {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 10px !important;
+}
+
+#pokedex {
+  padding-top: 100px;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 200px;
+  max-height: 450px;
+  margin: 20px 20px;
+  border: 0px solid black !important;
+  background: lightsteelblue !important;
+  border-top-right-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+}
+
+.openCard {
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 1000px !important;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.typeBox {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  border-radius: 16px;
+  border: 1px solid black;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-height: 500px;
+}
+
+.card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.openCardBackground {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.753);
+  background: rgba(0, 0, 0, 0.753);
+}
+
+.positionCenter {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.statsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.openImage {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heightWeightBox {
+  display: flex;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.weightHeightContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.flexDirection {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageBackground {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom-right-radius: 40px;
+  border: 0.5px solid black;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+}
+
+.chart {
+  border: 1px solid grey;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 2px solid black;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+}
+
+.card-img-top:hover {
+  transform: scale(0.9);
+}
+
+.navbar {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  background-color: rgb(63, 63, 63) !important;
+  border-bottom: 2px solid black;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+
+.container-fluid {
+  padding: 0 100px !important;
+  width: 100vw !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.headerImage {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  height: 20px !important;
+  width: 200px;
+  background-color: lightsteelblue !important;
+  color: white;
+  border-radius: 50%;
+}
+
+.progressBar::before {
+  position: absolute;
+  height: 18px;
+  content: "" attr(value);
+  left: 0;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 20px;
+}
+progress::-webkit-progress-value {
+  background-color: #1f75fe !important;
+  border-radius: 20px;
+}
+
+progress {
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.statusBar {
+  display: flex;
+  padding: 5px 10px !important;
+  justify-content: space-between;
+}
+
+h3 {
+  padding: 10px 0;
+}
+
+.statusValueName {
+  display: flex;
+  text-align: center;
+  width: 120px;
+  height: 20px;
+  justify-content: start;
+}
+
+.cardMainBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.flexColum {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBody {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.attributeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 2px solid black;
+  color: white;
+  background-color: rgb(124, 137, 182);
+}
+
+.abilityContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 30px;
+}
+
+.helpContainer {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.buttonListLeft {
+  display: flex;
+  align-items: center;
+}
+
+.numberContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.rotate-text {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.buttonNextPokemon {
+  background-color: transparent;
+  border: none;
+}
+.arrowButton {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.loader {
+  background-color: lightsteelblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.spinnerLoaderMorePokemon {
+  margin: 40px 0;
+  background-color: rgb(63, 63, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 200px;
+  flex-direction: column;
+}
+
+.spinner-border {
+  --bs-spinner-width: 10rem !important;
+  --bs-spinner-height: 10rem !important;
+  --bs-spinner-animation-speed: 1s !important;
+}
+
+.padding {
+  padding-top: 20px;
+}
+
+.cinzelFont {
+  font-family: "Cinzel", serif;
+}
+
+.buttonRenderMorePokemonBackground {
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .headerLeft {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .openCard {
+    max-width: 280px;
+    transform: translate(-55%, -55%);
+  }
+  .openImage {
+    max-width: 200px;
+  }
+  .chart {
+    max-height: 400px;
+  }
+  .progressBar {
+    width: 100px;
+  }
+  .progressBar::before {
+    width: 70%;
+  }
+  .buttonListLeft {
+    width: 20px;
+    justify-content: start;
+    position: relative;
+    top: 40px;
+  }
+  .attributeButton {
+    height: 20px;
+    width: unset;
+  }
+  .buttonInformation {
+    margin-top: -1px;
+  }
+  .buttonStats {
+    margin-top: 54px;
+  }
+  .buttonAbilities {
+    margin-top: 41px;
+  }
+  .imageBackground {
+    width: 101%;
+  }
+  #statusBar {
+    max-width: 250px;
+  }
+  .mainBody {
+    min-height: 260px;
+  }
+  .helpContainer {
+    height: 100%;
+    width: 20px;
+  }
+}
